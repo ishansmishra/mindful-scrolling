@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindful Scrolling Settings</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    label, input, button {
+      font-size: 16px;
+    }
+
+    input {
+      width: 80px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    #footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    #footer a {
+      color: #1da1f2;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    #footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h2>Mindful Scrolling Settings</h2>
+
+  <label>
+    Pause after every 
+    <input type="number" id="threshold" min="5" max="200" step="5" />
+    tweets
+  </label>
+  <button id="save">Save</button>
+
+  <div id="footer">
+    Created by Ishan Mishra.
+    <a href="https://github.com/ishansmishra/" target="_blank">GitHub</a> 
+    <a href="https://www.linkedin.com/in/ishansmishra/" target="_blank">LinkedIn</a>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Mindful Scrolling",
+  "version": "1.0",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*","*://x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html"
+}
